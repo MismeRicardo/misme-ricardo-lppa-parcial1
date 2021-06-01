@@ -172,6 +172,6 @@ footer {
         color: white;
     }
 
-.regresar {
+.regresar, .btnAccion {
     margin-top: 5px;
 }
