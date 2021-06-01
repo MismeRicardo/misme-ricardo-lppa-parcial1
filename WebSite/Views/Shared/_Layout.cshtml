@@ -1,0 +1,44 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/site.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="contenedor">
+        <header>
+            <div id="logo">
+                <h1></h1>
+            </div>
+            <div id="buscador">
+                <form action="#" method="post">
+                    Buscar &nbsp;
+                    <input name="busqueda" type="text" />
+                </form>
+            </div>
+            <div class="clear">
+            </div>
+        </header>
+        <nav>
+            <ul id="menu_principal">
+                <li> <a href="/">Home</a> </li>
+                <li>
+                    <a href="@Url.Action("Index", "Afiliado")">Afiliados</a>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            @RenderBody()
+        </section>
+        <aside>
+            <p>Opciones</p>
+        </aside>
+        <footer>
+            <p> Datos de la WebSite - 2021</p>
+        </footer>
+    </div>
+</body>
+</html>
